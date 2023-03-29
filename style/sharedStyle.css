@@ -1,0 +1,85 @@
+:root{
+    --borderSettings: 6px solid #445a3c;
+}
+
+body{
+    background-color: #edeae0;
+}
+/* FONT  */
+h1, h2, h3{
+    font-family: monospace;
+    font-size: 3.5em;
+}
+
+p{
+    font: 20px 'Lucida Console', sans-serif; 
+    line-height: 25px;
+}
+/* FONT  */
+
+#bannerImage img{
+    height: 550px;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+
+/* Header flexbox */
+.headerBar{
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    /* margin: 6px; */
+}
+
+nav{
+    padding: 15px 10px;
+    flex-grow: 2;
+    border:  var(--borderSettings);
+    text-align: center;
+    margin: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header{
+    padding: 10px 10px;
+    flex-grow: 10;
+    border:  var(--borderSettings);
+    text-align: center;
+    margin: 10px;
+}
+/* Header flexbox */
+
+/* footer */
+
+footer{
+    border: var(--borderSettings);
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#contact p{
+    text-align: center;
+}
+
+
+/* footer */
+
+.whitespace{
+    height: 100px;
+}
+
+@media only screen and (max-width: 688px){
+    .headerBar h1{
+        font-size: 4.6vw;
+    }
+}

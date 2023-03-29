@@ -1,0 +1,31 @@
+.row img{
+    /* height: 400px; */
+    width: 400px;
+    height: auto;
+}
+
+.container-fluid{
+    text-align: center;
+}
+
+
+#interestColumn{
+    height: 350px;
+    width: 500px;
+    margin: 10px;
+    padding: 15px 10px;
+    border: var(--borderSettings);
+}
+
+
+
+
+@media only screen and (max-width: 532px){
+    #interestColumn{
+        height: 350px;
+        width:90%;
+        margin: 10px;
+        padding: 15px 10px;
+        border: var(--borderSettings);
+    }
+}
