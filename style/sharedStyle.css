@@ -2,9 +2,33 @@
     --borderSettings: 6px solid #445a3c;
 }
 
-body{
-    background-color: #edeae0;
+:focus-visible{
+    outline: 4px solid rgb(42, 173, 216);
 }
+
+
+
+#bannerImage a {
+    font-size: 25px;
+    font-family:monospace;
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+#bannerImage a:focus {
+    left: auto;
+    top: auto;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
 /* FONT  */
 h1, h2, h3{
     font-family: monospace;
@@ -47,6 +71,18 @@ nav ul{
     padding: 0;
 
 }
+
+a:link {
+    color:#0000FF;
+  }
+  
+  a:visited {
+    color: #7700ff;
+  }
+  
+  a:hover {
+    color: #423fe8;
+  }
 
 
 header{

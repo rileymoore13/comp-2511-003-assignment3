@@ -1,107 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style/sharedStyle.css">
-    <link rel="stylesheet" href="style/indexStyle.css">
+    <link rel="stylesheet" href="style/sharedStyle.css" />
+    <link rel="stylesheet" href="style/indexStyle.css" />
 
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <div id="bannerImage">
-        <img src="images/porterrobinsongrass.png">
+        <a href="#mainContent" tabindex="1">skip to main content</a>
+      <img
+        src="images/porterrobinsongrass.png"
+        alt="Banner image of man laying in grass"
+        title="man lays in grass"
+      />
     </div>
 
     <div class="headerBar">
-        <header>
-            <h1>he is beauty | he is grace | he is...RILEY</h1>
-        </header>
+      <header>
+        <h1>he is beauty | he is grace | he is...RILEY</h1>
+      </header>
 
-        <nav>
-            <ul>
-                <li><a href="media.html">My Interests</a></li>
-                <li><a href="#rap">Shakespeare Rap</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li tabindex="2"><a href="media.html">My Interests</a></li>
+          <li tabindex="3"><a href="#rap">Shakespeare Rap</a></li>
+          <li tabindex="4"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
 
-
-
-
-
     <div class="firstContent">
-        <div id="myFace">
-            <img src="images/skiingsmilepic.jpg" alt="smiling riley">
-            <img src="images/meWithHats.jpg" alt="hats on riley"> 
-            <!-- add alts ^^^^^^^ n shit -->
-        </div>
+      <div id="myFace" tabindex="5">
+        <img
+          src="images/skiingsmilepic.jpg"
+          alt="smiling riley"
+          title="riley smiling"
+        />
+        <img src="images/meWithHats.jpg" alt="hats on riley" title="Riley wearing 6 hats" />
+        <!-- add alts ^^^^^^^ n shit -->
+      </div>
 
-        <div id="aboutMe">
-            <h3>Who the HELL is Riley?</h3>
-            <p><br> Hi I'm Riley. I am currently a student at Mount Royal University taking a degree in the Bachelor of Computer Information Systems.
-                For my job, I am a ski instructor. Our club mostly skis at Winsport and Sunshine Resort. <br><br><br> Aside from work and school, I enjoy 
-                many other outdoor activities! In the warm months I will ride my bike in the city and go on big hikes in the rockies. Most of all,
-                I love rock climbing. I started a few years ago at the MRU climbing wall and since then I've learned all sorts of things about climbing,
-                and even had the privilege of climbing outdoors a few times!
-            </p>
-        </div>
+      <div id="aboutMe" tabindex="6">
+        <h2>Who the HELL is Riley?</h2>
+        <p >
+          <br />
+          Hi I'm Riley. I am currently a student at Mount Royal University
+          taking a degree in the Bachelor of Computer Information Systems. For
+          my job, I am a ski instructor. Our club mostly skis at Winsport and
+          Sunshine Resort. <br /><br /><br />
+          Aside from work and school, I enjoy many other outdoor activities! In
+          the warm months I will ride my bike in the city and go on big hikes in
+          the rockies. Most of all, I love rock climbing. I started a few years
+          ago at the MRU climbing wall and since then I've learned all sorts of
+          things about climbing, and even had the privilege of climbing outdoors
+          a few times!
+        </p>
+      </div>
     </div>
 
     <div class="container-fluid">
-        <div class="row">
-            <h2>School Accomplishments</h2><p>(hover to enlarge!)</p>
-        </div>
-        <div class="row" id="photoRow">
+      <div class="row">
+        <h3  tabindex="7" id="mainContent">School Accomplishments</h3>
+        <p>(hover to enlarge!)</p>
+      </div>
+      <div class="row" id="photoRow">
+        <figure>
+          <img src="images/valedictorianspeech.png" alt="image of a grad speech" />
+          <figcaption>My 9th grade valedictorian speech</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/valedictorianspeech.png" alt="FILL ME">
-                <figcaption>My 9th grade valedictorian speech</figcaption>
-            </figure>
+        <figure>
+          <img src="images/motorcycle.jpg" alt="a mini welded motorcycle" />
+          <figcaption>This lil' motorcycle I welded</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/motorcycle.jpg" alt="FILL ME">
-                <figcaption>This lil' motorcycle I welded</figcaption>
-            </figure>
+        <figure>
+          <img src="images/myGPA.png" alt="a picture of my GPA" />
+          <figcaption>My GPA let's gooo</figcaption>
+        </figure>
+      </div>
 
-            <figure>
-                <img src="images/myGPA.png" alt="FILL ME">
-                <figcaption>My GPA let's gooo</figcaption>
-            </figure>
-        </div>
+      <div class="whitespace"></div>
 
-        <div class="whitespace"></div>
+      <div class="row">
+        <h3>High School Senior Year Shakespeare Rap</h3>
 
-        <div class="row">
-            <h2>High School Senior Year Shakespeare Rap</h2>
+        <audio controls id="rap" tabindex="8">
+          <source src="audio/shakeMySpeare.m4a" type="audio/x-m4a"/>
+        </audio>
 
-            <audio controls  id="rap">
-                <source src="audio/shakeMySpeare.m4a" type="audio/x-m4a">
-            </audio>
-        </div>
+        <button type="button" class="collapsible"  tabindex="9"><h3>Transcript (click to view)</h3></button>
+        <div class="content"> 
+          <p>
+            <br>[Chorus] You was at Cyprus (Yeah) Pullin up to defend the island
+            (Pullin up) Iago's got some tricks (Some tricks) Desdemona you dirty
+            minx Wine still in my cup (My cup) Othello got straight manipulated
+            (yeah) Pillow full of makeup She so ignorant gon' get suffocated
+            (rip)
 
+            <br /><br />[Verse 1] Shawty don't like me (She don't) She loves
+            Othello, won't take my money (cash) In my psyche (in my head) In my
+            heart and I can't even woo her Iago gave me hope (gave me hope)
+            Finna sell all my land, hope the Moor will bore her Now I'm wearing
+            a beard ( A Beard) Cassio's a drunk, he so damn savage (drunk)
+            Desdemona, please love me No, no, no mediocre Desdemona don't love
+            me (Nah) No drinks, I'm posted for guard duty (sober) Iago said have
+            a drink (drink) I might have a drink, tis' a night of revels ()
+            Baby, I feel fine (fine) Go enrage him, and Cassio will be over
+            Shit, he has a knife (knife) Montano watch that man go crazy Cassio
+            ain't fit (Nah) This man could never be lieutenant Acting' like he
+            sober (He ain't) Tryna front, we know he juicin' (We know) Cassio
+            should go (Leave), Officer to soldier lackey
+
+            <br /><br />[Chorus] You was at Cyprus (Yeah) Pullin up to defend
+            the island (Pullin up) Iago's got some tricks (Some tricks)
+            Desdemona you dirty minx Wine still in my cup (My cup) Othello got
+            straight manipulated (yeah) Pillow full of makeup She so ignorant
+            gon' get suffocated (rip)
+
+            <br /><br />[Verse 2] Desdemona So thICK ( Thick aS hELL) She's
+            cheating on me, dont care what y'all think (she Is) Shawty Tupped
+            cassio Lost my clothe she's a damn hoe (sHE diD) She think i don't
+            know But I got the facts from my bro iago He Always tells the truth
+            (HE DO) They be asking' why I lookin' so Ugly Then they meet me
+            (Locked eyes) Now they know me , now we even Why they holding hands?
+            (damn) Kissing aint a customary greeting, Feelin' like a fool (foo)
+            Tell me what you need and I can kill Cassio (dead) Desdemona a hoe
+            (yuh) Who'da thought she's such a strumpet(strump) othello is so
+            mad, cause i be like; desdemona don't love you i be pulling these
+            tricks ( like magic ) i'm just out here tryna get promoted I hate
+            emilia she such a damn hoe, I know she sleeping with othello
+            handkerchief in my hands ( real nice ) thy brethren othello finna be
+            angered Cassio want no smoke but he still getting it nonetheless (oh
+            yeah) desdemona chillin in bed (sleepin) soon enough yeah she gonna
+            perish (rip rip) now everybody dead (oh no ) They call me iago, make
+            everyone manipulated eating up the truth, boutta be constipated (ah)
+            Nah i ain't feel elated
+          </p>
+
+          <script>var coll = document.getElementsByClassName("collapsible");
+            var i;
             
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }</script> 
+            <!-- Javascript borrowed from https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+            <!-- I wanted to have the transcript for the whole song but it was too much text so I did some JS -->
+        </div>
+      </div>
     </div>
 
-    <footer id="contact">
-        <p>(❁´◡`❁)(❁´◡`❁)</p>
-        <p>
-            JoeMomma@gmail.com<br>
-            (123) 456 - 7890
-        </p>
+    <footer id="contact"  tabindex="10">
+      <p>(❁´◡`❁)(❁´◡`❁)</p>
+      <p>
+        JoeMomma@gmail.com<br />
+        (123) 456 - 7890
+      </p>
     </footer>
-
-</body>
-
-
-
+  </body>
 </html>

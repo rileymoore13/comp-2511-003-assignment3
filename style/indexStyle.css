@@ -68,7 +68,11 @@ figure {
     padding: 10px;
 }
 
-/* .row audio{
-    width: 300px;
-} */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
 
