@@ -28,4 +28,8 @@
         padding: 15px 10px;
         border: var(--borderSettings);
     }
+
+    #interestColumn p{
+        font-size: 3.4vw;
+    }
 }
